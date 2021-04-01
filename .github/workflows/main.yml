@@ -26,8 +26,8 @@ jobs:
           # E-mail id of the service account to act on
           serviceAccount: terraform-test@tony-sandbox-308422.iam.gserviceaccount.com
           # Github token that can update secrets in the repos
-          personalAccessToken: githubToken
+          personalAccessToken: GITHUBTOKEN
           # List of repositories, separated by comma, to install secrets in
           repositories: key-rotation-test
           # Name of the GH secret
-          secretName: terraform-sa
+          secretName: TERRAFORMSA
