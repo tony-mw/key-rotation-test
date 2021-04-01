@@ -34,6 +34,6 @@ jobs:
           # Github token that can update secrets in the repos
           personalAccessToken: GITHUBTOKEN
           # List of repositories, separated by comma, to install secrets in
-          repositories: key-rotation-test
+          repositories: tony-mw/key-rotation-test
           # Name of the GH secret
           secretName: TERRAFORMSA
