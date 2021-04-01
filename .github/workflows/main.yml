@@ -16,6 +16,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Setup GCP Service Account
+        uses: google-github-actions/setup-gcloud@master
+        with:
+          service_account_key: ${{ secrets.GCP_SA_INFRA_KEY }}
+          export_default_credentials: true
       - name: Rotate GCP service account keys
         # You may pin to the exact commit or the version.
         # uses: miklosn/github-action-rotate-gcp-key@1b3e25ec2c0a744b60450f87a39540cd5151c36a
